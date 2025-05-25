@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daksh Chaudhary - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #1e293b; /* Dark slate text */
+        }
+        .section-title {
+            font-size: 2.25rem; 
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #0f172a; 
+            text-align: center;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .tag {
+            display: inline-block;
+            background-color: #e0f2fe; 
+            color: #0ea5e9; 
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem; 
+            font-weight: 500;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .primary-button {
+            background-color: #2563eb; 
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem; 
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .primary-button:hover {
+            background-color: #1d4ed8; 
+        }
+        .icon {
+            color: #2563eb; 
+        }
+        nav a {
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #2563eb; 
+        }
+    </style>
+</head>
+<body id="page-top" class="antialiased"></body>
+
+<nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#page-top" class="text-2xl text-slate-800 hover:text-blue-600 transition-colors duration-300" aria-label="Home">
+                <i class="fas fa-home"></i>
+            </a>
+            <div class="space-x-4">
+                <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                <a href="#experience" class="text-slate-600 hover:text-blue-600 font-medium transition-colors duration-300">Experience</a>
+                <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition-colors duration-300">Skills</a>
+                <a href="#education" class="text-slate-600 hover:text-blue-600 font-medium transition-colors duration-300">Education</a>
+                <a href="#achievements" class="text-slate-600 hover:text-blue-600 font-medium transition-colors duration-300">Achievements</a>
+                <a href="#contact" class="text-slate-600 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-slate-900 to-slate-700 text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <img src="Daksh_Chaudhary_Profile_Picture.png" alt="Daksh Chaudhary" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full mb-6 border-4 border-slate-500 object-cover">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Daksh Chaudhary</h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-8">AI/Software Engineer | Innovator | Problem Solver</p>
+            <a href="#contact" class="primary-button text-lg">Get In Touch</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center text-slate-700 text-lg leading-relaxed">
+                <p class="mb-4">
+                    Hello! I’m Daksh, an enthusiastic AI specialist and Software Engineer with 2+ years of experience building intelligent solutions. From developing a boiler health monitoring system at Forbes Marshall to deploying LLM-based features in Kinaxis’s customer care solutions, my work is driven by curiosity and a passion for making a meaningful impact.
+                </p>
+                <p class="mb-4">
+                    I thrive in collaborative environments and enjoy solving complex problems. Always eager to explore new tools and techniques, I aim to grow continuously and contribute meaningfully to every team I’m part of.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-16 md:py-24 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="space-y-12">
+                <div class="card md:flex items-start">
+                    <div class="md:w-1/4 mb-4 md:mb-0 md:pr-8">
+                        <h3 class="text-xl font-semibold text-slate-800">Automation Specialist Intern</h3>
+                        <p class="text-slate-600">Kinaxis</p>
+                        <p class="text-sm text-slate-500">Jan 2025 - Present</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-inside text-slate-700 space-y-2">
+                            <li>Trained a Salesforce Einstein classification model on 4,000+ historical support cases, achieving 71% accuracy for affinity tagging.</li>
+                            <li>Spearheaded production deployment of the model, processing 3,400+ cases/month. </li>
+                            <li>Integrated the model into our automation pipeline, boosting routing efficiency by 32% and accelerating case resolution.</li>
+                            <li>Collaborated with support and program teams to define requirements and ensure the solution met key business objectives.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card md:flex items-start">
+                    <div class="md:w-1/4 mb-4 md:mb-0 md:pr-8">
+                        <h3 class="text-xl font-semibold text-slate-800">DevOps and AI Co-op</h3>
+                        <p class="text-slate-600">Ericsson</p>
+                        <p class="text-sm text-slate-500">May 2023 - Aug 2024</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-inside text-slate-700 space-y-2">
+                            <li>Engineered a RAG chatbot PoC for CI/CD support, achieving an 87.5% useful response rate and an 85% latency reduction.</li>
+                            <li>Ingested ~4.4K documents into ~5K Chroma vectors, optimizing retrieval via embedding search and prompt engineering.</li>
+                            <li>Deployed the chatbot on Kubernetes (Kubeflow, Ray Serve, Docker) with 4-bit quantized Llama2 model via vLLM.</li>
+                            <li>Designed and ran benchmark and custom-metric evaluations to validate and optimize performance.</li>
+                            <li>Authored a research paper on the chatbot’s architecture and impact; presented at ICSME 2024, a top Software Engineering venue.</li>                     
+                        </ul>
+                    </div>
+                </div>
+                <div class="card md:flex items-start">
+                    <div class="md:w-1/4 mb-4 md:mb-0 md:pr-8">
+                        <h3 class="text-xl font-semibold text-slate-800">AI Research Assistant</h3>
+                        <p class="text-slate-600">University of Ottawa</p>
+                        <p class="text-sm text-slate-500">Sep 2022 - Oct 2024</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-inside text-slate-700 space-y-2">
+                            <li>Engineered a PoC for an industry partner to mitigate DDoS attacks and demonstrate AI-driven detection utility. </li>
+                            <li>Executed EDA, feature engineering, oversampling, and grid-search hyperparameter tuning in Python (scikit-learn).</li>
+                            <li>Assessed Decision Tree, KNN, and Random Forest classifiers, achieving ROC AUC ~74.5% and Precision@k ~88.9% for threat flagging.</li>      
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card md:flex items-start">
+                    <div class="md:w-1/4 mb-4 md:mb-0 md:pr-8">
+                        <h3 class="text-xl font-semibold text-slate-800">Software Engineer</h3>
+                        <p class="text-slate-600">Persistent Systems</p>
+                        <p class="text-sm text-slate-500">May 2021 - Aug 2022</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-outside text-slate-700 space-y-2">
+                            <li>Developed tools using Java Spring, Docker, DB2, MySQL, and Git to streamline data collection, optimize request process, monitor utilization, and automate invoicing for IBM storage devices. </li>
+                            <li>Contributed to a 40% improvement in operational efficiency via successful automation of tools, supporting over 250 client accounts across 30 global storage locations. </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="card md:flex items-start">
+                    <div class="md:w-1/4 mb-4 md:mb-0 md:pr-8">
+                        <h3 class="text-xl font-semibold text-slate-800">Data Science Intern</h3>
+                        <p class="text-slate-600">BlackCoffer</p>
+                        <p class="text-sm text-slate-500">Apr 2021 - May 2022</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-outside text-slate-700 space-y-2">
+                            <li>Executed NLP techniques on financial reports using Python (BeautifulSoup, NLTK) for web scraping and sentiment analysis.</li>
+                            <li>Designed and implemented an automated web crawling tool using Scrapy, reducing manual data extraction time by 16%.</li>
+                            <li>Enhanced tool efficiency with integrated language translation features for diverse user needs.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="card md:flex items-start">
+                    <div class="md:w-1/4 mb-4 md:mb-0 md:pr-8">
+                        <h3 class="text-xl font-semibold text-slate-800">Software Engineering Intern</h3>
+                        <p class="text-slate-600">Forbes Marshall</p>
+                        <p class="text-sm text-slate-500">Aug 2020 - Jan 2021</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-outside text-slate-700 space-y-2">
+                            <li>Constructed a Boiler Health Management System, integrating machine learning regression models to predict critical component failure points, reducing downtime and costs.</li>
+                            <li>Consulted domain experts to identify and analyze key performance indicators (KPIs) of boilers.</li>
+                            <li>Utilized AWS services (Kinesis, S3, SageMaker) for ingesting and processing data from servers, and model deployment, ensuring real- time insights for stakeholders.</li>
+                            <li>Developed a recommender PoC with collaborative filtering & market basket analysis for stakeholder insights.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+<section id="skills" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-4 text-center">
+                        <i class="fas fa-code icon mr-2"></i>Software Development & Architecture
+                    </h3>
+                    <div class="text-center">
+                        <span class="tag">C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Spring</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">Microservices</span>
+                        <span class="tag">REST APIs</span>                     
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-4 text-center">
+                        <i class="fas fa-brain icon mr-2"></i>Data, AI & ML
+                    </h3>
+                    <div class="text-center">
+                        <span class="tag">SQL</span>
+                        <span class="tag">NoSQL</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Natural Language Processing</span>
+                        <span class="tag">Language Models</span>
+                        <span class="tag">Fine-tuning</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">AI Agents</span>
+                        <span class="tag">MCP</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">MLOps</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-4 text-center">
+                        <i class="fas fa-cogs icon mr-2"></i>DevOps & Infrastructure
+                    </h3>
+                     <div class="text-center">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Microsoft Azure</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Jira</span>
+                        <span class="tag">Scrum</span>
+                        <span class="tag">Eclipse</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-16 md:py-24 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-800">Master of Computer Science, concentration in Applied AI</h3>
+                    <p class="text-slate-600">University of Ottawa</p>
+                    <p class="text-sm text-slate-500">Graduated: Nov 2024</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-slate-800">Bachelor of Engineering, Computer Engineering</h3>
+                    <p class="text-slate-600">Savitribai Phule Pune University</p>
+                    <p class="text-sm text-slate-500">Graduated: Jul 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Achievements & Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <img src="https://placehold.co/600x400/0ea5e9/ffffff?text=Project+Alpha" alt="Project Alpha" class="rounded-md mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Project Alpha - AI Powered Recommendation Engine</h3>
+                    <p class="text-slate-700 mb-3 text-sm">Developed a recommendation engine using collaborative filtering that improved content discovery by 25%.</p>
+                    <div class="mb-3">
+                        <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Flask</span>
+                    </div>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Project <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Open+Source+Contribution" alt="Open Source Contribution" class="rounded-md mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Open Source Contributor - Awesome Library</h3>
+                    <p class="text-slate-700 mb-3 text-sm">Contributed key features and bug fixes to a popular open-source JavaScript library used by thousands of developers.</p>
+                     <div class="mb-3">
+                        <span class="tag">JavaScript</span><span class="tag">Open Source</span><span class="tag">Git</span>
+                    </div>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Contributions <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+                <div class="card">
+                     <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Hackathon+Winner" alt="Hackathon Winner" class="rounded-md mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Hackathon Winner - InnovateX 2022</h3>
+                    <p class="text-slate-700 mb-3 text-sm">Led a team to win first place by developing a prototype for a sustainable urban farming solution in 48 hours.</p>
+                     <div class="mb-3">
+                        <span class="tag">IoT</span><span class="tag">React Native</span><span class="tag">Firebase</span>
+                    </div>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-slate-800 text-slate-200">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-white">Get In Touch</h2>
+            <p class="text-center max-w-2xl mx-auto mb-10 text-lg text-slate-300">
+                As a recent graduate, I’m actively seeking my next opportunity in AI or Software Engineering. I'm always open to new projects, creative ideas, or the chance to be part of something exciting. Feel free to reach out!
+            </p>
+            <div class="max-w-lg mx-auto text-center">
+                <a href="mailto:dchau012@uottawa.ca" class="primary-button mb-6 inline-block">
+                    <i class="fas fa-envelope mr-2"></i> Email Me
+                </a>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.linkedin.com/in/daksh-chaudhary/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white text-3xl transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Daksh-Chaudhary99" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white text-3xl transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=Pi9qt0IAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white text-3xl transition-colors" aria-label="Google Scholar Profile">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Daksh_C/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white text-3xl transition-colors" aria-label="LeetCode Profile">
+                        <i class="fas fa-keyboard"></i>
+                    </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center">
+        <p>&copy; <span id="currentYear"></span> Daksh Chaudhary. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Simple scroll animations for cards (optional, can be expanded)
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+
+</body>
+</html>
